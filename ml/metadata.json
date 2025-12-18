@@ -1,0 +1,1 @@
+{"num_classes": 3, "unique_vals_scaled": [0.0, 1.0, 2.0], "input_dim": 8, "hidden_dim": 64, "num_layers": 2, "seq_length": 48}
