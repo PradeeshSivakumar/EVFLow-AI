@@ -1,79 +1,75 @@
 # ⚡ EVFlow-AI
-## EV Charging Demand & Port Availability Prediction using Multi-Output Deep Learning
+## Intelligent EV Charging Demand & Port Availability Prediction System
+
+EVFlow-AI is a deep learning–based forecasting system designed to predict **electric vehicle (EV) charging energy demand** and **charging port availability** simultaneously. The project aims to support smart grid management, optimize EV charging infrastructure, and improve the charging experience for EV users.
 
 ---
 
-## **M — Motivation**
+## 📌 Problem Statement
 
-The rapid adoption of **Electric Vehicles (EVs)** is placing increasing pressure on **charging infrastructure** and **power grids**. Unpredictable charging demand often leads to congestion at charging stations, long waiting times, inefficient energy distribution, and risks to grid stability.
-
-Most existing solutions focus on predicting either **energy demand** or **charging station usage** independently, which limits their effectiveness in real-world scenarios.
-
-**EVFlow-AI** is motivated by the need for an intelligent, data-driven system that can **simultaneously forecast EV charging energy demand and charging port availability**, enabling smarter infrastructure planning and improved user experience.
+The rapid increase in EV adoption has led to significant challenges in managing charging stations and power grid stability. Unpredictable charging behavior causes congestion at stations, inefficient energy distribution, long waiting times, and potential grid overloads. Existing systems often predict energy demand or station usage separately, limiting their real-world effectiveness.
 
 ---
 
-## **A — Approach**
+## 🎯 Objectives
 
-EVFlow-AI adopts a **multi-output deep learning approach** to perform short-term forecasting for EV charging infrastructure.
-
-### 🔹 Methodology
-
-1. **Data Collection**
-   - Historical EV charging session data
-   - Time-based charging patterns
-
-2. **Data Preprocessing & Feature Engineering**
-   - Time of day
-   - Day of week
-   - Historical load trends
-   - Charging station utilization metrics
-
-3. **Model Design**
-   - Supervised learning framework
-   - Multi-output neural network architecture
-   - Single model predicting:
-     - Energy demand
-     - Charging port availability
-
-4. **Training & Evaluation**
-   - CPU-friendly model training
-   - Time-series forecasting validation
-   - Performance evaluation using standard regression metrics
-
-5. **Prediction Layer**
-   - Short-term energy demand forecasting
-   - Charging port availability estimation
-   - Outputs suitable for dashboards and APIs
+- Forecast short-term EV charging energy demand
+- Predict charging port availability at stations
+- Reduce congestion and waiting times
+- Support grid stability and energy planning
+- Enable data-driven infrastructure decisions
 
 ---
 
-## **D — Deliverables**
+## 🚀 Features
 
-### 🔹 Technical Deliverables
 - Multi-output deep learning model
-- EV charging energy demand prediction (kWh)
-- Charging port availability prediction
-- Modular machine learning pipeline
-- Prediction logic documentation
+- Simultaneous prediction of demand and port availability
+- Time-series forecasting
+- CPU-friendly training (no GPU required)
+- Modular and scalable architecture
+- Ready for real-time API and dashboard integration
 
-### 🔹 System Outputs
-- Hourly and daily energy demand trends
-- Charging port congestion indicators
-- Decision-support insights for EV infrastructure management
+---
 
-### 🔹 Stakeholder Benefits
-- **Grid Operators:** Improved load balancing and grid stability
-- **Charging Station Providers:** Reduced congestion and optimized station usage
-- **EV Users:** Lower waiting times and better trip planning
-- **Policymakers:** Data-driven infrastructure planning
+## 🧠 Machine Learning Approach
+
+- **Model Type:** Multi-output neural network  
+- **Learning Paradigm:** Supervised learning  
+- **Data Type:** Time-series charging data  
+
+### Input Features
+- Time of day
+- Day of week
+- Historical charging demand
+- Number of connected EVs
+- Charging station utilization
+
+### Output Predictions
+- Energy demand (kWh)
+- Available charging ports
+
+---
+
+## 🏗️ System Architecture
+
+EV Charging Data
+↓
+Data Preprocessing & Feature Engineering
+↓
+Multi-Output Deep Learning Model
+↓
+Energy Demand Prediction | Port Availability Prediction
+↓
+Dashboards / APIs / Smart Grid Systems
+
 
 ---
 
 ## 🛠️ Technology Stack
 
 - **Programming Language:** Python
-- **Deep Learning:** TensorFlow / PyTorch
+- **Deep Learning Frameworks:** TensorFlow / PyTorch
 - **Data Processing:** Pandas, NumPy
 - **Visualization:** Matplotlib, Seaborn
 - **Training Environment:** Jupyter Notebook / Google Colab
@@ -91,27 +87,9 @@ EVFlow-AI/
 ├── data/ # Raw and processed datasets
 ├── process_data.py # Data preprocessing
 ├── verify_data.py # Data validation
-├── PREDICTION_LOGIC.md # Forecasting logic explanation
+├── PREDICTION_LOGIC.md # Prediction logic documentation
 ├── requirements.txt
 └── README.md
 
-
----
-
-## 🚀 Future Enhancements
-- Real-time IoT data integration
-- Weather-aware demand prediction
-- Reinforcement learning for load optimization
-- City-scale EV charging simulation
-- Mobile application integration
-
----
-
-## 👤 Author
-
-**Pradeesh Sivakumar**  
-B.E. Computer Science and Engineering  
-Chennai Institute of Technology  
-
-📧 Email: spradeesh8233@gmail.com
+## 🏗️ System Architecture
 
