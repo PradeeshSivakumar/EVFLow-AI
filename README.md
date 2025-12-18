@@ -89,6 +89,19 @@ EVFlow-AI/
 ├── verify_data.py # Data validation
 ├── PREDICTION_LOGIC.md # Prediction logic documentation
 ├── requirements.txt
+
+
+
+
+---
+
+## ⚙️ Installation & Setup
+
+```bash
+git clone https://github.com/USERNAME/EVFlow-AI.git
+cd EVFlow-AI
+pip install -r requirements.txt
+
 └── README.md
 
 ## 🏗️ System Architecture
